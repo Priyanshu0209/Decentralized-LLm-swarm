@@ -1,0 +1,168 @@
+/* Professional Dark Theme for DroneAgent Ground Control Station */
+
+QWidget {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: "Segoe UI", "Inter", "Roboto", sans-serif;
+    font-size: 11pt;
+}
+
+QMainWindow {
+    background-color: #121212;
+}
+
+/* Group Boxes */
+QGroupBox {
+    border: 1px solid #333333;
+    border-radius: 4px;
+    margin-top: 1.5ex;
+    font-weight: bold;
+    padding-top: 10px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    color: #4da6ff;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #2d2d30;
+    border: 1px solid #3f3f46;
+    border-radius: 3px;
+    padding: 6px 12px;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+QPushButton:hover {
+    background-color: #3e3e42;
+    border-color: #007acc;
+}
+QPushButton:pressed {
+    background-color: #007acc;
+    color: #ffffff;
+}
+QPushButton:disabled {
+    background-color: #1e1e1e;
+    border-color: #333333;
+    color: #555555;
+}
+
+/* Special Buttons */
+QPushButton#btn_arm {
+    background-color: #a83232;
+    color: white;
+}
+QPushButton#btn_arm:hover {
+    background-color: #c93a3a;
+}
+QPushButton#btn_takeoff {
+    background-color: #2d7a2d;
+    color: white;
+}
+QPushButton#btn_takeoff:hover {
+    background-color: #369c36;
+}
+QPushButton#btn_emergency, QPushButton#btn_kill {
+    background-color: #cc0000;
+    color: white;
+    font-weight: bold;
+}
+QPushButton#btn_emergency:hover, QPushButton#btn_kill:hover {
+    background-color: #ff1a1a;
+}
+
+/* Labels */
+QLabel {
+    color: #cccccc;
+}
+QLabel#titleLabel {
+    font-size: 14pt;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Inputs */
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox {
+    background-color: #252526;
+    border: 1px solid #3f3f46;
+    border-radius: 3px;
+    padding: 4px;
+    color: #e0e0e0;
+    selection-background-color: #007acc;
+}
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus {
+    border: 1px solid #007acc;
+}
+
+/* Tabs */
+QTabWidget::pane {
+    border: 1px solid #333333;
+    background: #1e1e1e;
+}
+QTabBar::tab {
+    background: #252526;
+    border: 1px solid #333333;
+    padding: 6px 12px;
+    color: #999999;
+}
+QTabBar::tab:selected {
+    background: #1e1e1e;
+    border-bottom-color: #1e1e1e;
+    color: #ffffff;
+}
+QTabBar::tab:hover:!selected {
+    background: #2d2d30;
+    color: #cccccc;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #1e1e1e;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #424242;
+    min-height: 20px;
+    border-radius: 6px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #505050;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+QScrollBar:horizontal {
+    border: none;
+    background: #1e1e1e;
+    height: 12px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #424242;
+    min-width: 20px;
+    border-radius: 6px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #505050;
+}
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
+
+/* Lists and Tables */
+QListWidget, QTableWidget, QTreeWidget, QTextEdit {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    alternate-background-color: #202020;
+    color: #e0e0e0;
+}
+QHeaderView::section {
+    background-color: #252526;
+    border: 1px solid #333333;
+    padding: 4px;
+    color: #cccccc;
+}

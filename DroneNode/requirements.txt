@@ -1,0 +1,5 @@
+# DroneNode Requirements (Raspberry Pi)
+# No PySide6 - DroneNode is headless
+mavsdk>=2.8.0
+pymavlink
+PyYAML>=6.0.1

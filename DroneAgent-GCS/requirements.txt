@@ -1,0 +1,4 @@
+# DroneAgent-GCS Requirements (Laptop Only)
+# No MAVSDK - GCS does not interface with Pixhawk directly
+PyYAML>=6.0.1
+PySide6

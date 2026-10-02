@@ -1,0 +1,9 @@
+# AirSim Configuration (Transport Overrides Only)
+# Do not define mode here; mode is defined in simulation.yaml
+
+connection:
+  type: "tcp"
+  url: "tcp://localhost:4560"
+
+host: "localhost"
+port: 50050

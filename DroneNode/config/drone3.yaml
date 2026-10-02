@@ -1,0 +1,13 @@
+# Drone 3 Specific Configuration
+
+drone_id: 3
+vehicle:
+  name: "Drone3"
+
+# Neighbor list for initial discovery
+neighbor_list: [1, 2]
+
+connection:
+  type: "udp"
+  url: "udp://:14542"
+port: 50053

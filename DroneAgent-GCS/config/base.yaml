@@ -1,0 +1,50 @@
+# Base Configuration (Hardware Independent)
+
+# UDP port for mesh communication
+udp_port: 14560
+mesh_port: 14560
+ip_address: "0.0.0.0"
+
+# Flight performance limits
+max_velocity: 5.0
+max_altitude: 100.0
+safe_distance: 5.0
+
+# Subsystem frequencies (Hz)
+heartbeat_rate: 10.0
+planner_rate: 10.0
+telemetry_rate: 20.0
+communication_timeout: 1.0
+
+# Logging
+logging:
+  level: "INFO"
+  log_to_file: true
+  directory: "./logs"
+
+# Safety checks
+safety:
+  min_gps_satellites: 6
+  min_battery_percent: 20.0
+  max_ekf_variance: 2.0
+
+# Failsafe behaviors
+failsafe:
+  action: "RTL"
+  min_battery: 20.0
+
+# Collision Avoidance subsystem
+collision_avoidance:
+  enabled: true
+  min_distance: 5.0
+
+# Default Mission parameters
+mission:
+  mission_id: 1
+  takeoff_altitude: 10.0
+  formation: "V"
+  waypoints:
+    - [47.397742, 8.545594, 50.0]
+    - [47.397900, 8.545000, 50.0]
+    - [47.398000, 8.546000, 50.0]
+  mission_complete_action: "RTL"

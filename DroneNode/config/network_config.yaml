@@ -1,0 +1,18 @@
+# Network Configuration for DroneAgent Swarm
+# All IPs are static and assigned per device.
+# Never hardcode IPs in Python code - read from this file only.
+
+ground_station:
+  ip_address: "192.168.1.100"
+  role: "gcs"
+
+drones:
+  - drone_id: 1
+    ip_address: "192.168.1.101"
+  - drone_id: 2
+    ip_address: "192.168.1.102"
+  - drone_id: 3
+    ip_address: "192.168.1.103"
+
+# Shared mesh communication port
+udp_port: 14560

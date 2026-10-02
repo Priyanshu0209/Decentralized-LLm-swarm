@@ -1,0 +1,9 @@
+# Simulation Configuration
+
+mode: "simulation"
+
+connection:
+  type: "udp"
+  url: ""
+
+host: "localhost"

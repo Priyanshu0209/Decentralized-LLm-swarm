@@ -1,0 +1,9 @@
+# Real Hardware Configuration
+
+mode: "real"
+
+connection:
+  type: "serial"
+  url: "serial:///dev/ttyAMA0:921600"
+
+host: "localhost"

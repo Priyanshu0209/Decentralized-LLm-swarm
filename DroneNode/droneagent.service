@@ -1,0 +1,17 @@
+[Unit]
+Description=DroneNode Autonomous Controller
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/DroneNode
+ExecStart=/home/pi/DroneNode/venv/bin/python3 /home/pi/DroneNode/drone_main.py -c config/base.yaml config/network_config.yaml config/real.yaml config/drone1.yaml
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=dronenode
+
+[Install]
+WantedBy=multi-user.target
